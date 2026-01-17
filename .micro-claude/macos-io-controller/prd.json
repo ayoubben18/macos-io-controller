@@ -1,0 +1,87 @@
+{
+  "project": "macOS IO Controller",
+  "document": "plan.md",
+  "granularity": "mini",
+  "tasks": [
+    {
+      "id": 1,
+      "title": "Project Setup & Configuration",
+      "description": "Create Xcode project, configure entitlements, set up project structure with folders for App, Views, Models, Services, and Utilities",
+      "from": 147,
+      "to": 213,
+      "done": true
+    },
+    {
+      "id": 2,
+      "title": "Menu Bar Shell with MenuBarExtra",
+      "description": "Implement basic menu bar presence using SwiftUI MenuBarExtra with placeholder dropdown content",
+      "from": 107,
+      "to": 146,
+      "done": true
+    },
+    {
+      "id": 3,
+      "title": "Data Models",
+      "description": "Create AudioDevice and VideoDevice Swift models matching the data model specification",
+      "from": 61,
+      "to": 92,
+      "done": true
+    },
+    {
+      "id": 4,
+      "title": "Audio Device Manager (CoreAudio)",
+      "description": "Implement CoreAudio wrapper for device enumeration, default device switching, volume control, and mute toggle",
+      "from": 94,
+      "to": 102,
+      "done": true
+    },
+    {
+      "id": 5,
+      "title": "Audio Output UI",
+      "description": "Build accordion component, device list, volume slider, and mute toggle for audio output section",
+      "from": 25,
+      "to": 40,
+      "done": true
+    },
+    {
+      "id": 6,
+      "title": "Audio Input UI",
+      "description": "Implement audio input accordion reusing components from audio output, with input-specific controls",
+      "from": 41,
+      "to": 47,
+      "done": true
+    },
+    {
+      "id": 7,
+      "title": "Video Device Manager (AVFoundation)",
+      "description": "Implement AVFoundation wrapper for camera enumeration and selection",
+      "from": 103,
+      "to": 106,
+      "done": true
+    },
+    {
+      "id": 8,
+      "title": "Camera UI",
+      "description": "Build camera accordion with device list and enable/disable toggle",
+      "from": 48,
+      "to": 60,
+      "done": true
+    },
+    {
+      "id": 9,
+      "title": "Permission Handling",
+      "description": "Implement microphone and camera permission requests, denied state UI with System Settings deep link",
+      "from": 198,
+      "to": 220,
+      "done": true
+    },
+    {
+      "id": 10,
+      "title": "Edge Cases & Polish",
+      "description": "Handle device disconnection, no devices available states, error handling, and visual refinement",
+      "from": 221,
+      "to": 254,
+      "done": true
+    }
+  ]
+}
