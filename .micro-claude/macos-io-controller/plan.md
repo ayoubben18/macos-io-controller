@@ -58,6 +58,12 @@ Switching audio and video I/O devices on macOS requires navigating through Syste
 3. User clicks camera on/off toggle
 4. Camera access is disabled/enabled system-wide
 
+#### Flow 6: Quit Application
+1. User right-clicks menu bar icon
+2. Context menu appears with "Quit" option
+3. User clicks "Quit"
+4. Application terminates
+
 ### Data Model
 
 No persistent data storage required. All state is read from system APIs:
@@ -112,7 +118,7 @@ AppState {
 
 ```
 MenuBarIcon
-├── Dropdown Container
+├── Dropdown Container (left-click)
 │   ├── AudioOutputAccordion
 │   │   ├── AccordionHeader ("Audio Output" + expand/collapse icon)
 │   │   └── AccordionContent
@@ -135,6 +141,9 @@ MenuBarIcon
 │           ├── DeviceList
 │           │   └── DeviceRow (icon, name, checkmark if active)
 │           └── EnableDisableToggle
+│
+└── ContextMenu (right-click)
+    └── "Quit" MenuItem
 ```
 
 **Visual Specifications:**

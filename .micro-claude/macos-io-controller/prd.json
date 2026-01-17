@@ -79,8 +79,16 @@
       "id": 10,
       "title": "Edge Cases & Polish",
       "description": "Handle device disconnection, no devices available states, error handling, and visual refinement",
-      "from": 221,
-      "to": 254,
+      "from": 227,
+      "to": 260,
+      "done": true
+    },
+    {
+      "id": 11,
+      "title": "Right-Click Context Menu with Quit Option",
+      "description": "Add right-click context menu to menu bar icon with 'Quit' option to terminate the application",
+      "from": 61,
+      "to": 65,
       "done": true
     }
   ]

@@ -137,3 +137,26 @@ _Notes, decisions, and discoveries made during implementation._
 - CameraDeviceRowView displays "In Use" badge with orange styling when camera is active elsewhere
 - Volume control failures fail silently per plan (no user-facing errors)
 
+---
+
+## Mutation - Jan 17, 2026
+
+**Type**: Add
+**Summary**: Added right-click context menu with "Quit" option for exiting the application
+**Plan changes**:
+- Added Flow 6: Quit Application (lines 61-65)
+- Updated UI Components to show ContextMenu with Quit MenuItem (lines 145-146)
+- Updated Dropdown Container label to specify "(left-click)" (line 121)
+**PRD changes**: Added Task #11 - Right-Click Context Menu with Quit Option
+
+## Task #11: Right-Click Context Menu with Quit Option
+**Status**: Completed
+**Files**:
+- macOSIOController/App/macOSIOControllerApp.swift (modified)
+**Notes**:
+- Added AppDelegate using NSApplicationDelegateAdaptor to integrate AppKit functionality
+- Implemented NSEvent local monitor for .rightMouseUp events on status bar items
+- Context menu displays "Quit" option with Cmd+Q key equivalent
+- Uses NSApplication.shared.terminate(nil) for clean application termination
+- Event monitor properly cleaned up in applicationWillTerminate
+
